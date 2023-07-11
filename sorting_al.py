@@ -22,4 +22,5 @@ def sort(sort_function):
         print ("New Smallest Number is "+str(smallest_num))
         smallest_num= nums_to_sort [2]
         count+1
+        
 sorted_nums=[]
