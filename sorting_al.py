@@ -9,8 +9,11 @@ count=1
 for i in range(len(nums_to_sort)):
     if nums_to_sort[i]<smallest:
         smallest=nums_to_sort[i]
+        pos=[i]
 
-
+del nums_to_sort [pos]
+print(i)
+print(nums_to_sort)
 
 
 
