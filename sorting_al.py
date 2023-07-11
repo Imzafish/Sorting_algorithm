@@ -1,8 +1,6 @@
 import time
 import random
 nums_to_sort=[12,24,6,8,9,64738,64,3,2,2,1]
-
-    
 count=0
 print(nums_to_sort)
 smallest_num=1
