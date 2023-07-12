@@ -1,12 +1,16 @@
 import time
 import random
-
+start=time.time()
 nums=[55,56, 57,57,55,64,64,3,2,1,3]
 half = len(nums) // 2
 first_half = nums[:half]
 second_half = nums[half:]
+sorted_list=[]
+
 print("First half:", first_half)
 print("Second half:", second_half)
+for i in range(100):
+    i=1
 
 def split_1():
     crunch=len(first_half) // 2
@@ -14,7 +18,7 @@ def split_1():
     crunch_2= second_half[:crunch]
     print("First Half:", crunch_1)
     print("Second Half:", crunch_2)
-    
+
 def split_2():
     crunchy=len(second_half) // 2
     crunch_A= first_half[:crunchy]
@@ -23,3 +27,6 @@ def split_2():
     print("Crunchy 2:", crunch_B)
 
 
+print("Sorting ended..."+"\n Sorted list: "+str(sorted_list))
+end=time.time()
+print("Time to sort is " + str(end-start))
