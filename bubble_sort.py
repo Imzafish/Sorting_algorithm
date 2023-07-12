@@ -4,7 +4,8 @@ start=time.time()
 sorted_list=[]
 nums_to_sort=[55,56, 57,57,55,64,64,3,2,1,3]
 count=0
-for i t:
+nums_to_sort_length=len(nums_to_sort)
+for i in range(nums_to_sort_length):                           
     smallest_num=nums_to_sort[count]
     count+1
     print("Sorting beginning...")
