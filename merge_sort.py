@@ -8,17 +8,18 @@ second_half = nums[half:]
 print("First half:", first_half)
 print("Second half:", second_half)
 
-def split():
+def split_1():
     crunch=len(first_half) // 2
     crunch_1= first_half[:crunch]
     crunch_2= second_half[:crunch]
     print("First Half:", crunch_1)
     print("Second Half:", crunch_2)
-
-crunchy=len(second_half) // 2
-crunch_A= first_half[:crunchy]
-crunch_B= second_half[:crunchy]
-print("Crunchy 1:", crunch_A)
-print("Crunchy 2:", crunch_B)
+    
+def split_2():
+    crunchy=len(second_half) // 2
+    crunch_A= first_half[:crunchy]
+    crunch_B= second_half[:crunchy]
+    print("Crunchy 1:", crunch_A)
+    print("Crunchy 2:", crunch_B)
 
 
