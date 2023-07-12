@@ -8,3 +8,10 @@ second_half = nums[half:]
 
 print("First half:", first_half)
 print("Second half:", second_half)
+crunch=len(first_half) // 2
+crunch_1= first_half[:crunch]
+crunch_2= second_half[:crunch]
+print("Crunch 1:", crunch_1)
+print("Crunch 2:", crunch_2)
+
+
