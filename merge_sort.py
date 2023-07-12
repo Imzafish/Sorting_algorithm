@@ -9,22 +9,35 @@ sorted_list=[]
 
 print("First half:", first_half)
 print("Second half:", second_half)
-for i in range(100):
-    i=1
+count=1
 
-def split_1():
+def split_list(list): 
+    if len(list) == 1: return
+
+
+    half1 = list[:len(list)//2]
+    half2 = list[len(list)//2:]
+    print(half1)
+    print(half2)
+
+    split_list(half1)
+    split_list(half2)
+ 
+
+
+
+split_list(nums) 
+
+def split_1(array_to_split):
     crunch=len(first_half) // 2
     crunch_1= first_half[:crunch]
     crunch_2= second_half[:crunch]
-    print("First Half:", crunch_1)
-    print("Second Half:", crunch_2)
+    print("Crunch 1:", crunch_1)
+    print("Crunch 2:", crunch_2)
+    count+1
+    print(" Count:", count)
 
-def split_2():
-    crunchy=len(second_half) // 2
-    crunch_A= first_half[:crunchy]
-    crunch_B= second_half[:crunchy]
-    print("Crunchy 1:", crunch_A)
-    print("Crunchy 2:", crunch_B)
+
 
 
 print("Sorting ended..."+"\n Sorted list: "+str(sorted_list))
