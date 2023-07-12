@@ -3,6 +3,7 @@ import time
 start=time.time()
 nums=[55,56, 57,57,55,64,64,3,2,1,3]
 print ("Sorting Nums...")
+#Sorts Multiple Times getting closer and closer with evey sort.
 for a in range(len(nums)):
     for i in range(len(nums)-1):
         if nums[i] > nums[i+1]:
